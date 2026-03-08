@@ -11,6 +11,9 @@ def divide(a, b):
     if b == 0:
         return "Cannot divide by zero"
     return a / b
+    
+def  percentage(value, percent):
+    return (value * percent)/100
 
 
 print("Simple Python Calculator")
@@ -18,6 +21,7 @@ print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.percentage")
 
 choice = input("Choose operation (1/2/3/4): ")
 
@@ -35,6 +39,12 @@ elif choice == "3":
 
 elif choice == "4":
     print("Result:", divide(num1, num2))
+    
+elif choice == "5"
+    value = float(input("enter number"))
+    percent = float(input("enter percent))
+                          print("result",percentage(value, percent))
 
 else:
+
     print("Invalid input!!")
